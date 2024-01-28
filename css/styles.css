@@ -1540,29 +1540,36 @@ color: #000000;
 .list {
   display: flex;
   justify-content: center;
-  gap: 100px;
+  gap: 50px;
+  
 }
 
 .list li {
   position: relative;
+  
 }
 
 .list li:hover .first-menu {
-  display: block;
+  /* display: block; */
   z-index: 4;
+  top: 100%;
+  
 }
 
 .list .first-menu {
   position: absolute;
-  top: 100%;
+  top: -700%;
   left: 0;
   width: 100%;
-  display: none;
-  padding-top: 20px;
+  /* display: none; */
+  transition: .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+/* padding-top: 20px; */
+
 }
 
 .list li:hover .second-menu {
-  display: block;
+  /* display: block; */
+  top: 100%;
   z-index: 5;
 }
 
@@ -1578,6 +1585,7 @@ color: #000000;
   font-size: 25px;
   white-space: nowrap;
   font-family: 'Tektur';
+  
 }
 
 .home12 {
@@ -1591,6 +1599,7 @@ color: #000000;
 
 .list li a:hover .home12 {
   fill: #ffffff;
+  transition: fill .3s linear;
 }
 
 .down {
@@ -1603,6 +1612,7 @@ color: #000000;
 
 .list li a:hover .down {
   fill: #ffffff;
+  transition: fill .3s linear;
 }
 
 .left {
@@ -1615,19 +1625,20 @@ color: #000000;
 
 .list li a:hover .left {
   fill: #ffffff;
+  transition: fill .3s linear;
 }
 
 
 .list li a:hover {
   background: purple;
-  background-size: 40px;
   box-shadow: 0 1px 12px #ffffff;
+  transition: fill 1s;
+  overflow: visible
 }
 
 .list li a:active {
   background: rgb(73, 69, 128);
   box-shadow: 0 1px 16px #ffffff;
-  background-size: 40px;
 }
 
 
@@ -1686,11 +1697,12 @@ color: #000000;
 
 .list .second-menu {
   position: absolute;
-  top: 100%;
+  top: -1000%;
   left: 0;
   width: 100%;
-  display: none;
-  padding-top: 20px;
+  transition: .3s cubic-bezier(0.19, 1, 0.22, 1);
+  /* display: none;
+  padding-top: 20px; */
 }
 
 .list .second-menu a {
@@ -1706,16 +1718,6 @@ color: #000000;
   border: 2px solid #000000;
   font-family: 'Salsa';
   font-weight: 400;
-}
-
-.list li a:hover {
-  background: purple;
-  box-shadow: 0 1px 12px #ffffff;
-}
-
-.list li a:active {
-  background: rgb(73, 69, 128);
-  box-shadow: 0 1px 16px #ffffff;
 }
 
 .list ul.third-menu a {
