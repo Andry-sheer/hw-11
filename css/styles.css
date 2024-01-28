@@ -1570,7 +1570,7 @@ color: #000000;
   text-decoration: none;
   text-transform: uppercase;
   background: #81a36b;
-  padding: 15px 30px;
+  padding: 15px 25px;
   display: block;
   border-radius: 10px;
   color: #000000;
@@ -1580,22 +1580,48 @@ color: #000000;
   font-family: 'Tektur';
 }
 
-.list li a.home-1 {
-  background: #81a36b url(/images/icons/home-1.svg) no-repeat 10px 6px;
-  background-size: 40px;
-  padding: 15px 10px 15px 50px;
-  display: inline-block;
-  border-radius: 10px;
+.home12 {
+  width: 30px;
+  height: 30px;
+  fill: #000000;
+  margin: -5px 0;
+  margin-right: 5px;
 }
 
-.list li a.home-1:hover {
-  background: purple url(/images/icons/home-1.svg) no-repeat 10px 6px;
+
+.list li a:hover .home12 {
+  fill: #ffffff;
+}
+
+.down {
+  width: 40px;
+  height: 40px;
+  fill: #000000;
+}
+
+.list li a:hover .down {
+  fill: #ffffff;
+}
+
+.left {
+  width: 40px;
+  height: 40px;
+  fill: #000000;
+}
+
+.list li a:hover .left {
+  fill: #ffffff;
+}
+
+
+.list li a:hover {
+  background: purple;
   background-size: 40px;
   box-shadow: 0 1px 12px #ffffff;
 }
 
-.list li a.home-1:active {
-  background: rgb(73, 69, 128) url(/images/icons/home-1.svg) no-repeat 10px 6px;
+.list li a:active {
+  background: rgb(73, 69, 128);
   box-shadow: 0 1px 16px #ffffff;
   background-size: 40px;
 }
