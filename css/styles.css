@@ -1570,7 +1570,7 @@ color: #000000;
   text-decoration: none;
   text-transform: uppercase;
   background: #81a36b;
-  padding: 15px 25px;
+  padding: 15px 15px;
   display: block;
   border-radius: 10px;
   color: #000000;
@@ -1581,10 +1581,10 @@ color: #000000;
 }
 
 .home12 {
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   fill: #000000;
-  margin: -5px 0;
+  margin: -10px 0;
   margin-right: 5px;
 }
 
@@ -1597,6 +1597,8 @@ color: #000000;
   width: 40px;
   height: 40px;
   fill: #000000;
+  margin: -10px 0;
+  margin-left: 5px;
 }
 
 .list li a:hover .down {
@@ -1607,6 +1609,8 @@ color: #000000;
   width: 40px;
   height: 40px;
   fill: #000000;
+  margin: -10px 0;
+  margin-right: 5px;
 }
 
 .list li a:hover .left {
@@ -1626,15 +1630,9 @@ color: #000000;
   background-size: 40px;
 }
 
-.list li a.img-homeworks {
-  background: #81a36b url(/images/icons/down-arrow.svg) no-repeat 100%/cover;
-  background-size: 40px;
-  padding: 15px 40px 15px 10px;
-  display: inline-block;
-  border-radius: 10px;
-}
 
-.list li a.img-homeworks:hover {
+
+/* .list li a.img-homeworks:hover {
   background: purple url(/images/icons/down-arrow.svg) no-repeat 100%/cover;
   background-size: 40px;
   box-shadow: 0 1px 12px #ffffff;
@@ -1684,7 +1682,7 @@ color: #000000;
   background: rgb(73, 69, 128) url('/images/icons/left-arrow.svg') no-repeat 10px 6px;
   box-shadow: 0 1px 16px #ffffff;
   background-size: 40px;
-}
+} */
 
 .list .second-menu {
   position: absolute;
